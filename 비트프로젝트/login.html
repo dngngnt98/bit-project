@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">    
+    <title>UI-Prototype(Login)</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body{
+            background: url('img/mainback.jpg') no-repeat center top;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: 100%;
+        }
+        .panel-default {
+            opacity: 0.7;
+            margin-top:200px;
+        }
+        .form-group.last { margin-bottom:20px; }
+    </style>
+    <style>
+        .icon-circle .fa{
+            font-size           : 25px;
+            color               : #e84700;
+            margin-top          : 10px;
+            height              : 40px;
+            width               : 40px;
+            border-radius       : 50%;
+            border              : 2px solid #e84700;
+            line-height         : 35px;
+            cursor              : pointer;
+            -webkit-transition  : all  ease-in-out 0.35s;
+            -moz-transition     : all  ease-in-out 0.35s;
+            -o-transition       : all  ease-in-out 0.35s;
+            -ms-transition      : all  ease-in-out 0.35s;
+            transition          : all  ease-in-out 0.20s,background-color ease-in-out 0.05s;
+        }
+        .icon-circle  .fa:hover{   
+            background-color        : #e84700;    
+            color                   : #fff;
+            border                  : 1px solid #e84711;
+            -moz-box-shadow         : inset 0px 0px 0px 5px #ffffff;
+            -o-box-shadow           : inset 0px 0px 0px 5px #ffffff;
+            -ms-box-shadow          : inset 0px 0px 0px 5px #ffffff;
+            -webkit-box-shadow      : inset 0px 0px 0px 5px #ffffff;
+            box-shadow              : inset 0px 0px 0px 5px #ffffff;
+            -ms-transform           : scale(1.2,1.2); 
+            -webkit-transform       : scale(1.2,1.2);
+            -moz-transform          : scale(1.2,1.2); 
+            -o-transform            : scale(1.2,1.2); 
+            transform               : scale(1.2,1.2);  
+        }
+        @media (min-width:320px) and (max-width:768px) {
+            .icon-circle .fa{
+                font-size           : 15px;
+                color               : #e84700;
+                margin              : 0 auto;
+                height              : 40px;
+                width               : 40px;
+                border-radius       : 50%;
+                border              :2px solid #e84700;
+                line-height         : 40px;
+                cursor              : pointer;
+                -webkit-transition  : all  ease-in-out 0.35s;
+                -moz-transition     : all  ease-in-out 0.35s;
+                -o-transition       : all  ease-in-out 0.35s;
+                -ms-transition      : all  ease-in-out 0.35s;
+                transition          : all  ease-in-out 0.20s,background-color ease-in-out 0.05s;
+            }
+
+            .icon-circle  .fa:hover{
+                background-color        : #e84700;    
+                color                   : #fff;
+                border                  : 1px solid #e84711;
+                -moz-box-shadow         : inset 0px 0px 0px 5px #ffffff;
+                -o-box-shadow           : inset 0px 0px 0px 5px #ffffff;
+                -ms-box-shadow          : inset 0px 0px 0px 5px #ffffff;
+                -webkit-box-shadow      : inset 0px 0px 0px 5px #ffffff;
+                box-shadow              : inset 0px 0px 0px 5px #ffffff;
+                -ms-transform           : scale(1.2,1.2); 
+                -webkit-transform       : scale(1.2,1.2);
+                -moz-transform          : scale(1.2,1.2); 
+                -o-transform            : scale(1.2,1.2); 
+                transform               : scale(1.2,1.2);  
+            }
+
+            .icon-circle  i:before{
+                margin-left         : 0px;
+                font-size           : 20px;
+            }   
+        }
+        .icon-circle  i:before{
+            margin-left         : 0px;
+            font-size           : 20px;
+        }
+
+        .ifacebook .fa{
+            color               :#3B5998;
+            border              :2px solid #3B5998;
+        }
+
+        .ifacebook .fa:hover{
+            background-color        : #3B5998;    
+            color                   : #fff;
+            border                  : 1px solid #3B5998;
+        }       
+
+        .igoogle .fa{
+            color               : #BD3518;
+            border              :2px solid #BD3518;
+        }
+
+        .igoogle .fa:hover{
+            background-color        : #BD3518;    
+            color                   : #fff;
+            border                  : 1px solid #BD3518;
+        }
+
+        .sicon{
+            padding-left: 230px;
+        }
+    </style>
+</head>
+<body>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 col-md-offset-1">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <span class="glyphicon glyphicon-lock"></span> Login</div>
+                    <div class="panel-body">
+                        <form class="form-horizontal" role="form">
+                        <div class="form-group">
+                            <label for="inputEmail3" class="col-sm-3 control-label">
+                             Email</label>
+                            <div class="col-sm-9">
+                                <input type="email" class="form-control" id="inputEmail3" placeholder="Email" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="inputPassword3" class="col-sm-3 control-label">
+                            Password</label>
+                            <div class="col-sm-9">
+                                <input type="password" class="form-control" id="inputPassword3" placeholder="Password" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-sm-offset-3 col-sm-9">
+                                <div class="checkbox">
+                                    <label>
+                                        <input type="checkbox"/>
+                                        Remember me
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group last">
+                            <div class="col-sm-offset-3 col-sm-9">
+                                <button type="submit" class="btn btn-success btn-sm">
+                                Sign in</button>
+                                <button type="reset" class="btn btn-default btn-sm">
+                                Reset</button>
+                            </div>
+                            <!--Socail Icon-->
+                            <div class="sicon">
+                                <div class="col-md-0 col-xs-3 text-center">
+                                    <div class="icon-circle">
+                                        <a href="#" class="ifacebook" title="Facebook"><i class="fa fa-facebook"></i></a>
+                                    </div>
+                                </div>         
+                                <div class="col-md-9 col-xs-3 text-center">
+                                    <div class="icon-circle">
+                                        <a href="#" class="igoogle" title="Google+"><i class="fa fa-google-plus"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--Social Icon End-->
+                        </div>
+                        </form>
+                    </div>
+                <div class="panel-footer">Not Registred? <a href="###">Register here</a></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- <footer>
+        <h2>This is Test Login Page</h2>
+    </footer> -->
+    <!-- jQuery (부트스트랩의 자바스크립트 플러그인을 위해 필요합니다) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <!-- 모든 컴파일된 플러그인을 포함합니다 (아래), 원하지 않는다면 필요한 각각의 파일을 포함하세요 -->
+    <script src="js/bootstrap.min.js"></script>
+</body>
+</html>
